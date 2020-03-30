@@ -26,10 +26,6 @@ export default class GameLevel extends Component {
 						<option className="dropdown-item" value="high">High</option>
 					</select>
 				</form>
-
-
-
-
 		)
 	}
 }

@@ -7,7 +7,6 @@ import UserName from './components/UserName/username';
 import UserInformation from  './components/UserInformation/userInformation';
 import GameLevel from  './components/GameLevel/gameLevel';
 
-
 export default class App extends Component {
    state = {
       sizeEasyMode: undefined,
@@ -162,7 +161,6 @@ export default class App extends Component {
                                         } :
                                       undefined)
                                     } >
-
 
                         {this.state.catchLevel === 'low' ?
                               <GameLow

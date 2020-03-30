@@ -22,15 +22,12 @@ export default class UserName extends Component {
 				'winner': this.state.eventAppeared,
 				"date": new Date().getHours() + ":" + new Date().getMinutes() + "; " +
 						new Date().getDate() + " " + (new Date().toLocaleString("en-us", {month: "long"})) +
-						" " + new Date().getFullYear()
-			}
-
+						" " + new Date().getFullYear()}
 		const dataWinnerComputer = {
 				"winner": "Computer",
 				"date": new Date().getHours() + ":" + new Date().getMinutes() + "; " +
 						new Date().getDate() + " " + (new Date().toLocaleString("en-us", {month: "long"})) +
-						" " + new Date().getFullYear()
-			}
+						" " + new Date().getFullYear()}
 
 		fetch ('https://starnavi-frontend-test-task.herokuapp.com/winners', {
 			method: 'POST',
@@ -40,7 +37,6 @@ export default class UserName extends Component {
 		body: this.props.userPoints > 12 ? (JSON.stringify(dataWinnerUser)) : (JSON.stringify( dataWinnerComputer ))
 		});
 
-
 		fetch('https://starnavi-frontend-test-task.herokuapp.com/winners', {
 			method: 'POST',
 			headers: {
@@ -49,7 +45,6 @@ export default class UserName extends Component {
 			body: this.props.computerScores > 12 ? (JSON.stringify(dataWinnerComputer)) : (JSON.stringify(dataWinnerUser))
 		});
 	}
-
 	render() {
 		return (
 				<form className='form-group username-form'>
@@ -60,7 +55,6 @@ export default class UserName extends Component {
 									 type='text'
 									 onChange={this.onEventChange}/>
 						</label>
-
 						<div>
 							<input type="submit"
 									 value = {this.props.computerScores > 12
@@ -71,7 +65,6 @@ export default class UserName extends Component {
 						</div>
 					</div>
 				</form>
-
 		)
 	}
 }
