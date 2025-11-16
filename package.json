@@ -6,7 +6,7 @@
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.1",
+    "react-scripts": "^5.0.1",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@types/es6-shim": "^0.31.39",
-    "eslint": "^6.8.0",
+    "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.18.3"
   }
 }
