@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@types/es6-shim": "^0.31.39",
-    "eslint": "^6.8.0",
+    "eslint": "^9.26.0",
     "eslint-plugin-react": "^7.18.3"
   }
 }
